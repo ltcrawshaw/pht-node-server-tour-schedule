@@ -1,0 +1,335 @@
+/*
+Filename: project.css
+Date: 12/5/15
+Programmer: Madison Erickson 
+*/
+
+blockquote {
+     color: #5fadb3; 
+     font-weight: bold; 
+     font-size: 1.15em; 
+}
+
+body {
+     background-image: url(images/portlandhistoricaltoursbackground.jpg); 
+     background-attachment: fixed; 
+     background-repeat: no-repeat; 
+     background-color: #ffffff; 
+     color: #666666; 
+     font-family: Cinzel, Arial, serif; 
+     padding: 20px; 
+}
+
+dd {
+     padding-bottom: 20px; 
+}
+
+dt {
+     color: #000000; 
+     font-size: 1.3em; 
+     padding-bottom: 10px; 
+}
+
+footer {
+     background-color: #ffffff; 
+     font-size: .70em; 
+     font-style: italic; 
+     padding-top: 100px; 
+     padding-bottom: 10px; 
+     text-align: center; 
+} 
+
+form {
+     background-image: url(images/portlandhistoricaltoursformbackground.png); 
+     background-color: #ffffff; 
+     font-family: Cinzel, Arial, serif; 
+     padding: 10px; 
+     padding-top: 35px; 
+}
+
+h1 {
+     color: #ffffff; 
+     background-color:#5fadb3; 
+     font-family: Cinzel, Arial, serif; 
+     padding: 5px; 
+     padding-left: 10px; 
+}
+     
+h2 {
+     color: #5fadb3; 
+     font-family: Cinzel, Arial, serif; 
+     font-size: 1.15em; 
+}
+
+header {
+     margin-left: auto; 
+     margin-right: auto; 
+     width: 920px; 
+}
+
+input, textarea {
+     display: block; 
+     margin-bottom: 2em; 
+}
+
+label {
+     clear: left; 
+     float: left; 
+     font-size: .75em; 
+     margin-bottom: 1em; 
+     padding-right: 10px; 
+     text-align: right; 
+     width: 150px; 
+}
+
+main {
+     background-color: #ffffff; 
+     margin-left: auto; 
+     margin-right: auto; 
+     padding-top: 20px; 
+     padding-bottom: 1px; 
+     padding-left: 60px; 
+     padding-right: 60px; 
+     width: 83%; 
+}
+
+nav { 
+     font-weight: bold; 
+     text-align: center; 
+     padding-top: 30px; 
+     padding-bottom: 30px; 
+}
+
+nav ul {
+     margin: 0;
+     padding: 0;
+}
+
+nav li {
+     background-image: url("images/nav_background.png");
+     background-repeat: no-repeat;
+     width: 175px;
+     height: 61px;
+     display: inline-block;
+}
+
+nav li a{
+     color: #ffffff;
+     font-size: 1em;
+     text-transform: uppercase;
+     padding-top: 32px;
+     display: block;
+     text-decoration: none;
+}
+
+select {
+     display: block; 
+     margin-bottom: 2em; 
+}
+
+table {
+     border: 2px solid #ffffff; 
+     margin: auto; 
+     padding-bottom: 50px; 
+     width: 600px; 
+}
+
+td {
+     background-color: #ffffff; 
+     border: 1px solid #0b344d; 
+     color: #363636; 
+     font-weight: bold; 
+     font-family: Cinzel, Arial, serif; 
+     font-size: .95em; 
+     padding: .5em; 
+     text-align: center; 
+}
+
+th {
+     background-color: #0b344d; 
+     color: #ffffff; 
+     font-size: 1.15em; 
+     font-weight: bold; 
+     font-family: Cinzel, Arial, serif; 
+     padding: .5em; 
+     text-align: center; 
+}
+
+a.reserve {
+     background-image: url("images/nav_background.png");
+     background-repeat: no-repeat;
+     width: 175px;
+     height: 61px;
+     display: inline-block;
+     text-decoration: none;
+     float: right;
+}
+a.reserve div {
+     color: #ffffff;
+     font-size: 1em;
+     text-transform: uppercase;
+     padding-top: 32px;
+     display: block;
+     text-align: center;
+}
+.clearright {
+     clear: right; 
+}
+
+.book {
+     float: right; 
+     margin: 5px 5px 5px 5px; 
+}
+
+#caption {
+     color: #0b344d; 
+     font-family: Cinzel, Arial, serif; 
+     font-size: 2.75em; 
+     padding-top: 30px; 
+     padding-bottom: 10px; 
+     text-align: center; 
+}
+    
+#desktop {
+     display: inline; 
+}
+
+.image {
+     float: right; 
+     margin: 5px 5px 5px 5px; 
+}
+
+#mobile {
+     display: none; 
+}
+
+#mysubmit {
+     margin-left: 200px; 
+}
+
+#honeypot {
+     display: none;
+}
+
+#signup {
+     margin-left: auto; 
+     margin-right: auto;  
+     padding-bottom: 25px; 
+     width: 100px; 
+}
+
+#source {
+     font-size: .10em; 
+     text-align: right; 
+}
+
+#wrapper {
+     background-color: #ffffff; 
+     min-width: 700px; 
+     max-width: 1024px; 
+     margin-left: auto; 
+     margin-right: auto; 
+     /*width: 80%;*/
+}
+
+@media only screen and (max-width: 1024px) {
+     
+     body {
+          margin: 0; 
+          padding: 0;  
+          background-image: none; 
+          }
+     
+     #wrapper {
+          width: auto; 
+          min-width: 0; 
+          margin: 0; 
+          box-shadow: none; 
+          }
+     
+     h1 {
+          margin: 0; 
+          }
+     
+     nav {
+          float: none; 
+          width: auto; 
+          padding: 1em; 
+          }
+     
+     nav li {
+          display: inline-block; 
+          }
+     
+     nav a {
+          padding: 1em; 
+          }
+     
+     main {
+          margin-left: 0;  
+          padding: 1em; 
+          font-size: 90%; 
+          }
+     
+     footer {
+          margin: 0; 
+          }
+}
+
+@media only screen and (max-width: 768px) {
+     
+     h1 {
+          height: 100%; 
+          font-size: 1.5em; 
+          padding-left: .3em; 
+          }
+          
+     nav {
+          padding: 0; 
+          }
+          
+     nav a {
+          display: block; 
+          padding: .2em; 
+          font-size: 1.3em; 
+          border-bottom: 1px solid #330000; 
+          }
+
+     nav ul {
+          margin: 0; 
+          padding: 0; 
+          }
+          
+     nav li {
+          display: block; 
+          margin: 0; 
+          padding: 0; 
+          }
+     
+     main {
+          padding-top: .1em; 
+          padding-right: 0; 
+          padding-bottom: .1em; 
+          padding-left: .4em; 
+          }
+          
+     main img {
+          display: none; 
+          padding-right: 0; 
+          }
+          
+     main ul {
+          list-style-position: outside; 
+          }
+     
+     footer {
+          padding: 0; 
+          }
+     
+     #mobile {
+          display: inline; 
+          }
+     
+     #desktop { display: none; 
+          }
+}

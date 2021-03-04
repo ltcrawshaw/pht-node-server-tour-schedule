@@ -1,0 +1,19 @@
+{
+  "name": "cis195",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "connect": "^3.7.0",
+    "mime": "^2.5.2",
+    "mime-types": "^2.1.29",
+    "nodemailer": "^6.5.0",
+    "querystring": "^0.2.1",
+    "util": "^0.12.3"
+  }
+}
