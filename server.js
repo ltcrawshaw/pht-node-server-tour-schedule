@@ -24,16 +24,6 @@ function send404(res) {
 //let server = http.createServer(function(req, res){
 function serverConfig(req, res, next) {
 
-    // let mimeLookup = {
-    //     '.css': 'text/css',
-    //     '.png': 'image/png',
-    //     '.jpg': 'image/jpeg',
-    //     '.js': 'application/javascript',
-    //     '.html': 'text/html',
-    // };
-
-    // if (req.method == 'GET') {
-
         //resolve file path to filesystem path
         let fileurl;
         if (req.url == '/') {
@@ -97,12 +87,12 @@ function contactEmail(req, res, next) {
                 '<li>Question: ' + question + '</li>' +
                 '</ul>';
             let transporter = nodemailer.createTransport({
-                host: 'mail.pcc-webtech.com',
+                host: '',
                 port: 587,
                 secure: false,
                 auth: {
-                    user: 'students@pcc-webtech.com',
-                    pass: 'zY?&RejYaC@F'
+                    user: '',
+                    pass: ''
                 },
                 tls: {
                     rejectUnauthorized: false
@@ -110,8 +100,8 @@ function contactEmail(req, res, next) {
             });
             //setup email
             let mailOptions = {
-                from: '"NodeMailer Contact" <students@pcc-webtech.com>',
-                to: 'liam.crawshaw@pcc.edu',
+                from: '"NodeMailer Contact" <>',
+                to: '',
                 subject: 'NodeMailer Submission',
                 html: output
             };
@@ -164,12 +154,12 @@ function reservationEmail(req, res, next) {
                 '<li>Comments: ' + comments + '</li>' +
                 '</ul>';
             let transporter = nodemailer.createTransport({
-                host: 'mail.pcc-webtech.com',
-                port: 587,
+                host: '',
+                port: ,
                 secure: false,
                 auth: {
-                    user: 'students@pcc-webtech.com',
-                    pass: 'zY?&RejYaC@F'
+                    user: '',
+                    pass: ''
                 },
                 tls: {
                     rejectUnauthorized: false
@@ -177,9 +167,9 @@ function reservationEmail(req, res, next) {
             });
             //setup email
             let mailOptions = {
-                from: '"NodeMailer Contact" <students@pcc-webtech.com>',
-                to: 'liam.crawshaw@pcc.edu',
-                subject: 'NodeMailer Submission',
+                from: '"NodeMailer Contact" <>',
+                to: '',
+                subject: '',
                 html: output
             };
 
@@ -196,7 +186,6 @@ function reservationEmail(req, res, next) {
     }
     next();
 }
-// ).listen(3000);
 
 app.use('/send', contactEmail);
 
